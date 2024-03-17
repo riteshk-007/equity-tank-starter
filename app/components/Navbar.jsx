@@ -6,12 +6,12 @@ import { FaAngleDown } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 import Link from "next/link";
 import { ModeToggle } from "./Mode";
-import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const { resolvedTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
@@ -98,16 +98,45 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/"
-                  onClick={() => setIsOpen(false)}
-                  className="block py-2  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-gray-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </Link>
+              <li className="my-2 md:my-0">
+                <div className="relative">
+                  <button
+                    onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                    onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                    onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                  >
+                    About
+                    <FaAngleDown
+                      className={`inline-block w-4 h-4 ml-1  text-gray-500 dark:text-gray-400 ${
+                        isAboutDropdownOpen
+                          ? "transform rotate-180 transition-all duration-150"
+                          : ""
+                      }`}
+                    />
+                  </button>
+
+                  {isAboutDropdownOpen && (
+                    <div
+                      onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                      onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                      className="z-50 absolute md:left-1/2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                    >
+                      <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                        <li>
+                          <Link
+                            href="/"
+                            onClick={() => setIsOpen(false)}
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          >
+                            ET Foundation
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </li>
-              <li>
+              <li className="my-2 md:my-0">
                 <div className="relative">
                   <button
                     onMouseEnter={() => setIsDropdownOpen(true)}
@@ -150,15 +179,6 @@ const Navbar = () => {
                           </Link>
                         </li>
                       </ul>
-                      <div className="py-1">
-                        <Link
-                          href="/"
-                          onClick={() => setIsOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                        >
-                          FAQ &rarr;
-                        </Link>
-                      </div>
                     </div>
                   )}
                 </div>
@@ -179,7 +199,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className="block py-2  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-gray-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  ET Foundation
+                  Blog
                 </Link>
               </li>
             </ul>

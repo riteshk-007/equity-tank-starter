@@ -41,7 +41,7 @@ const Navbar = () => {
           isSticky
             ? "sticky top-0 md:translate-y-3 md:w-3/4 lg:w-4/5 mx-auto md:rounded-3xl md:shadow-md z-[100] transition-all duration-300"
             : "w-full z-[100] "
-        }  dark:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#00c2cb,0_0_15px_#00c2cb,0_0_30px_#00c2cb]`}
+        }  dark:shadow-[0_0_1px_#fff,inset_0_0_1px_#fff,0_0_3px_#00c2cb,0_0_10px_#00c2cb,0_0_15px_#00c2cb]`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-3">
           <Link

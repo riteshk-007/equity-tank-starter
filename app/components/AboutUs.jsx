@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="text-[#2ec8d0] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-yellow-400">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
         About Us
       </h1>
       <span className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#2ec8d0] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
@@ -50,7 +50,7 @@ const AboutUs = () => {
           </p>
         </span>
       </div>
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-yellow-600  from-[#1a8085] to-yellow-400">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
         Our Mission Is To Make People Financial Strong And Independent
       </h1>
     </div>

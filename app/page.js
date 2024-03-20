@@ -1,6 +1,7 @@
 import AboutUs from "./components/AboutUs";
 import Hero from "./components/Hero";
 import Know from "./components/Know";
+import PriceCard from "./components/PriceCard";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Know />
       <AboutUs />
+      <PriceCard />
     </div>
   );
 }

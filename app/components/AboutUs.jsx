@@ -9,7 +9,7 @@ const AboutUs = () => {
       <span className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#2ec8d0] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
         Equity Tank –{" "}
         <p className="text-sm sm:text-md md:text-lg lg:text-xl text-center text-black dark:text-gray-200 font-light flex gap-2">
-          Stock Market Institute In Delhi
+          Stock Market Institute In Delhi Since 2021
         </p>
       </span>
       <div className="flex flex-col md:flex-row w-full items-center justify-center p-5 md:p-10">
@@ -24,19 +24,20 @@ const AboutUs = () => {
         </div>
         <span className="text-xs lg:text-sm  mx-2 font-semibold text-gray-700 dark:text-gray-300 text-start w-full md:w-1/2  my-3 flex flex-col">
           <p className="my-2">
-            Welcome, to the Leading Best Stock Market Institute In Delhi.
+            Welcome, to the Leading Best Stock Market Institute In Delhi Since
+            2021.
           </p>
           <p className="my-2">
-            Equity Tank Institute is the Best Stock Market Institute In Delhi,
-            with Top Offline Stock Market Classes, that provides you best
-            guidance & leadership in Stock Market with our offered courses.
-            Equity Tank (An ISO 21008:2018 Certified Institute) Is Most Trusted
-            Institute by Our Young Generation. It is an initiative for our new
-            generation who have interest on making more money, Willing to do
-            something new, and want to be achieve FINANCIAL FREEDOM. Usually, we
-            believe that trading is as a business that is not made for everyone,
-            but this is just a myth that we clear by making you learn about the
-            market & strategies that gives you mind blowing results
+            Equity Tank (An ISO 21008:2018 Certified Institute) is the Best
+            Stock Market Institute In Delhi, that provides you best guidance &
+            leadership in Stock Market with our offered courses. Equity Tank Is
+            Most Trusted Institute by Our Young Generation. It is an initiative
+            for our new generation who have interest on making more money,
+            Willing to do something new, and want to be achieve FINANCIAL
+            FREEDOM. Usually, we believe that trading is as a business that is
+            not made for everyone, but this is just a myth that we clear by
+            making you learn about the market & strategies that gives you mind
+            blowing results.
           </p>
           <p className="my-2">
             Equity Tank (An ISO 21008:2018 Certified Institute) Is the Top
@@ -50,7 +51,7 @@ const AboutUs = () => {
           </p>
         </span>
       </div>
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl capitalize lg:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
         Our Mission Is To Make People Financial Strong And Independent
       </h1>
     </div>

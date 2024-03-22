@@ -2,6 +2,7 @@ import AboutUs from "./components/AboutUs";
 import Hero from "./components/Hero";
 import Know from "./components/Know";
 import PriceCard from "./components/PriceCard";
+import BrokenCard from "./components/Steps";
 import WhyChoose from "./components/WhyChoose";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <PriceCard />
       <WhyChoose />
+      <BrokenCard />
     </div>
   );
 }

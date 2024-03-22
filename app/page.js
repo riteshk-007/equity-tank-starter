@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Know from "./components/Know";
 import PriceCard from "./components/PriceCard";
 import BrokenCard from "./components/Steps";
+import { Testimonial } from "./components/Testimonial";
 import WhyChoose from "./components/WhyChoose";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <PriceCard />
       <WhyChoose />
       <BrokenCard />
+      <Testimonial />
     </div>
   );
 }

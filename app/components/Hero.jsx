@@ -9,9 +9,23 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
+const images = [
+  {
+    img: "/banner/1.png",
+  },
+  {
+    img: "/banner/2.png",
+  },
+  {
+    img: "/banner/3.png",
+  },
+  {
+    img: "/banner/4.png",
+  },
+];
 const Hero = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   return (
     <Carousel
@@ -21,13 +35,13 @@ const Hero = () => {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {images?.map((item, index) => (
           <CarouselItem key={index}>
-            <div className="w-full h-60 md:h-96 lg:h-[500px] shadow-lg">
+            <div className="w-full  shadow-lg">
               <Image
-                layout="fill"
-                objectFit="cover"
-                src={`https://source.unsplash.com/random/${index + 1}`}
+                width={1920}
+                height={1080}
+                src={item.img}
                 alt={`Slide ${index + 1}`}
               />
             </div>

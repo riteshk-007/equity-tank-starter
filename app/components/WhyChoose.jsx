@@ -13,7 +13,7 @@ import { GiTeacher } from "react-icons/gi";
 const WhyChoose = () => {
   return (
     <div className="text-[#03989e] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-5">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-5 text-center">
         Why Choose Equity Tank?
       </h1>
       <div className="flex flex-col md:flex-row w-full items-center justify-center p-5 md:p-10">

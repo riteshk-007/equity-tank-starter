@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="text-[#2ec8d0] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
+    <div className="text-[#03989e] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
         About Us
       </h1>
-      <span className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#2ec8d0] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
+      <span className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
         Equity Tank –{" "}
         <p className="text-sm sm:text-md md:text-lg lg:text-xl text-center text-black dark:text-gray-200 font-light flex gap-2">
           Stock Market Institute In Delhi Since 2021

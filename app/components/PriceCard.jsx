@@ -17,7 +17,7 @@ const PriceCard = () => {
       <p className="text-xs md:text-base font-semibold text-gray-500 dark:text-gray-300 text-center uppercase">
         OUR COURSES
       </p>
-      <h1 className="text-base md:text-4xl font-bold text-center text-[#00c2cb] dark:text-[#00c2cb] ">
+      <h1 className="text-base md:text-4xl font-bold text-center text-[#03989e] dark:text-[#00c2cb] ">
         We Offer Following Stock Trading Courses
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
@@ -59,7 +59,7 @@ const PriceCard = () => {
                 </p>
               </div>
             </span>
-            <div className="flex w-full items-center justify-between p-5 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <div className="flex w-full items-center justify-between px-5 py-8 bg-white dark:bg-gray-800 rounded-sm shadow-md">
               <div className="flex flex-col items-start">
                 <div className="flex items-center text-2xl font-bold text-black dark:text-white">
                   <span>₹</span>

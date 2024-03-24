@@ -81,7 +81,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="my-2">
-                  <Link href="/" className="hover:underline">
+                  <Link href="/contact" className="hover:underline">
                     Contact us
                   </Link>
                 </li>

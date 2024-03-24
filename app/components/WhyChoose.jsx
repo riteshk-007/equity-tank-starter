@@ -12,8 +12,8 @@ import { GiTeacher } from "react-icons/gi";
 
 const WhyChoose = () => {
   return (
-    <div className="text-[#03989e] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-5 text-center">
+    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-gray-100 dark:bg-black/30">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-5 text-center p-5">
         Why Choose Equity Tank?
       </h1>
       <div className="flex flex-col md:flex-row w-full items-center justify-center p-5 md:p-10">
@@ -37,27 +37,28 @@ const WhyChoose = () => {
           </p>
         </span>
       </div>
-      <p className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
-        We Are Providing Various Additional Services To Our Students
-      </p>
+      <div className="w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-white dark:bg-black">
+        <p className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
+          We Are Providing Various Additional Services To Our Students
+        </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-5 ">
-        {Services.map((service) => (
-          <div
-            key={service.id}
-            className="flex items-center justify-start gap-2 p-2 sm:p-3 md:p-4  rounded-lg"
-          >
-            <span className="text-white rounded dark:text-white p-3 text-sm sm:text-md md:text-lg lg:text-2xl bg-[#03989e] dark:bg-[#00c2cb]">
-              {service.icon}
-            </span>
-            <span className="text-black dark:text-white text-sm sm:text-md md:text-base">
-              {service.title}
-            </span>
-          </div>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-5 ">
+          {Services.map((service) => (
+            <div
+              key={service.id}
+              className="flex items-center justify-start gap-2 p-2 sm:p-3 md:p-4  rounded-lg"
+            >
+              <span className="text-white rounded dark:text-white p-3 text-sm sm:text-md md:text-lg lg:text-2xl bg-[#03989e] dark:bg-[#00c2cb]">
+                {service.icon}
+              </span>
+              <span className="text-black dark:text-white text-sm sm:text-md md:text-base">
+                {service.title}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-
-      <div className=" mt-5 w-full">
+      <div className=" mt-5 w-full p-5">
         <div className="pb-20">
           <div className="mx-auto  h-96">
             <div className="mx-auto container w-full flex flex-col justify-center items-center">

@@ -86,8 +86,8 @@ const BrokenCard = () => {
                     Join Classes
                   </h4>
                   <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-200">
-                    Fill up Application Form And AƩend all classes and take
-                    doubt session, do pracƟce with guidance.
+                    Fill up Application Form And Attend all classes and take
+                    doubt session, do practice with guidance.
                   </p>
                 </div>
               </div>

@@ -8,7 +8,7 @@ import WhyChoose from "./components/WhyChoose";
 
 export default function Home() {
   return (
-    <div className="w-full flex-col">
+    <div className="w-full flex flex-col">
       <Hero />
       <Know />
       <AboutUs />

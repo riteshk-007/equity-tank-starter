@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-white dark:bg-black py-20 lg:py-[120px]">
+    <section className="relative z-10 overflow-hidden bg-white dark:bg-black/30 py-20 lg:py-[120px]">
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4 lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -108,13 +108,13 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="relative p-8 bg-white dark:bg-gray-950 rounded-lg shadow-lg  sm:p-12">
+            <div className="relative p-8 bg-white dark:bg-black rounded-lg shadow-lg border-2  sm:p-12">
               <form>
                 <div className="mb-6">
                   <input
                     type="text"
                     placeholder="Your Name"
-                    className="border-stroke  dark:text-gray-300 dark:bg-black text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
                     required
                   />
                 </div>
@@ -122,23 +122,16 @@ const ContactForm = () => {
                   <input
                     type="email"
                     placeholder="Your Email"
-                    className="border-stroke  dark:text-gray-300 dark:bg-black text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
                     required
                   />
                 </div>
-                <div className="mb-6">
-                  <input
-                    type="text"
-                    placeholder="Your Phone"
-                    className="border-stroke  dark:text-gray-300 dark:bg-black text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
-                    required
-                  />
-                </div>
+
                 <div className="mb-6">
                   <textarea
                     rows="6"
                     placeholder="Your Message"
-                    className="border-stroke  dark:text-gray-300 dark:bg-black text-body-color focus:border-sky-500 w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                    className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                     required
                   ></textarea>
                 </div>

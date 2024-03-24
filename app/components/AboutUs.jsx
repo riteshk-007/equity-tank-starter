@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="text-[#03989e] dark:text-[#00c2cb] w-full mx-auto flex items-center justify-center p-3 sm:p-4 md:p-5 flex-col bg-white dark:bg-gray-950">
+    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col items-center justify-center gap-2 md:gap-4 p-5 bg-gray-100 dark:bg-black/30">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
         About Us
       </h1>

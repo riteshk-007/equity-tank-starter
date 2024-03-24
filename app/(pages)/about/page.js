@@ -12,7 +12,7 @@ const About = () => {
       <Image
         width={1920}
         height={1080}
-        src="https://images.unsplash.com/photo-1675889247652-f2ae837e05fd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/banner/4.png"
         alt="Step 3"
         className="h-full w-full object-cover p-5 rounded-3xl"
       />

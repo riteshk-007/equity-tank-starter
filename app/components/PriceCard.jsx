@@ -14,7 +14,7 @@ const PriceCard = () => {
   }
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2 md:gap-4 p-5  dark:bg-black">
-      <p className="text-xs md:text-base font-semibold text-gray-500 dark:text-gray-300 text-center uppercase">
+      <p className="text-xl md:text-3xl font-semibold text-gray-500 dark:text-gray-300 text-center uppercase">
         OUR COURSES
       </p>
       <h1 className="text-base md:text-4xl font-bold text-center text-[#03989e] dark:text-[#00c2cb] ">

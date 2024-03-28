@@ -89,7 +89,7 @@ export const Card = [
     price: 1800,
     discount: 3000,
     paymentType: "monthly",
-    link: "/offline-classes",
+    link: "/foundation",
     rating: 93,
   },
   {
@@ -100,7 +100,7 @@ export const Card = [
     price: 2500,
     discount: 4500,
     paymentType: "monthly",
-    link: "/online-classes",
+    link: "/smart-traders",
     rating: 305,
   },
   {
@@ -111,7 +111,7 @@ export const Card = [
     price: 3000,
     discount: 6500,
     paymentType: "one time",
-    link: "/",
+    link: "/futures-options",
     rating: 113,
   },
 ];

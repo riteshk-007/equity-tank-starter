@@ -8,6 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import CarouselScroll from "./Carousel";
 
 const images = [
   {
@@ -24,32 +25,7 @@ const images = [
   },
 ];
 const Hero = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
-  );
-  return (
-    <Carousel
-      plugins={[plugin.current]}
-      className="w-full"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent>
-        {images?.map((item, index) => (
-          <CarouselItem key={index}>
-            <div className="w-full  shadow-lg">
-              <Image
-                width={1920}
-                height={1080}
-                src={item.img}
-                alt={`Slide ${index + 1}`}
-              />
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
-  );
+  return <CarouselScroll images={images} />;
 };
 
 export default Hero;

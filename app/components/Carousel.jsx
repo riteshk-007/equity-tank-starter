@@ -9,9 +9,9 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-const CarouselScroll = ({ images }) => {
+const CarouselScroll = ({ images, timing }) => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
+    Autoplay({ delay: timing, stopOnInteraction: true })
   );
   return (
     <Carousel

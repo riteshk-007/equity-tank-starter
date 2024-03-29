@@ -17,7 +17,7 @@ const images = [
   },
 ];
 const Hero = () => {
-  return <CarouselScroll images={images} />;
+  return <CarouselScroll images={images} timing={3000} />;
 };
 
 export default Hero;

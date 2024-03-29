@@ -1,11 +1,18 @@
-import Image from "next/image";
 import { MdOutlineTimer } from "react-icons/md";
 import { RxLapTimer } from "react-icons/rx";
 import { FaCalendarDays } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
+import CarouselScroll from "../Carousel";
+const images = [
+  {
+    img: "/banner/1.png",
+  },
+  {
+    img: "/banner/2.png",
+  },
+];
 
 const Course = ({
-  img,
   title,
   description1,
   description2,
@@ -16,13 +23,7 @@ const Course = ({
   return (
     <div className="flex items-center justify-center flex-col md:flex-row p-2">
       <div className="w-full md:w-1/2">
-        <Image
-          src={img}
-          width={1920}
-          height={800}
-          alt={title}
-          className="rounded-lg"
-        />
+        <CarouselScroll images={images} timing={2500} />
       </div>
       <div className="w-full p-1 md:w-1/2 flex items-center justify-center flex-col shadow-md mt-5 rounded-lg border  m-1">
         <span className="md:text-2xl text-lg font-bold text-[#03989e] dark:text-[#00c2cb]  text-center">

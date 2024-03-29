@@ -2,6 +2,7 @@ import CarouselScroll from "@/app/components/Carousel";
 import Certificate from "@/app/components/Certificate";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
+import Curriculum from "@/app/components/course/Curriculum";
 import Link from "next/link";
 import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
 
@@ -16,7 +17,7 @@ const images = [
 const SmartTraders = () => {
   return (
     <div className="flex flex-col w-full">
-      <CarouselScroll images={images} />
+      <CarouselScroll images={images} timing={2000} />
       <div className="flex mx-auto items-center justify-center gap-2 my-5">
         <Link href={"/foundation"}>
           <IoMdArrowDropleft
@@ -45,6 +46,7 @@ const SmartTraders = () => {
         discount={"5999"}
         message={"I am Interested in Smart Traders Course"}
       />
+      <Curriculum />
       <Providing />
       <Certificate />
     </div>

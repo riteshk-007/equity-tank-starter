@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Certificate from "@/app/components/Certificate";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Link from "next/link";
@@ -39,6 +40,7 @@ const FuturesOptions = () => {
         message={"I am Interested in ET – Futures & Options"}
       />
       <Providing />
+      <Certificate />
     </div>
   );
 };

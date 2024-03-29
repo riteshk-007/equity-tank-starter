@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Certificate from "@/app/components/Certificate";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Link from "next/link";
@@ -45,6 +46,7 @@ const SmartTraders = () => {
         message={"I am Interested in Smart Traders Course"}
       />
       <Providing />
+      <Certificate />
     </div>
   );
 };

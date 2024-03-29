@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Link from "next/link";
 import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
@@ -43,6 +44,7 @@ const SmartTraders = () => {
         discount={"5999"}
         message={"I am Interested in Smart Traders Course"}
       />
+      <Providing />
     </div>
   );
 };

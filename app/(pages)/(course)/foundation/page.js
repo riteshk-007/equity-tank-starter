@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
@@ -37,6 +38,7 @@ const Foundation = () => {
         discount={"3999"}
         message={"I am Interested in Stock Foundation Programme"}
       />
+      <Providing />
     </div>
   );
 };

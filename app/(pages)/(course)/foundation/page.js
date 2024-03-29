@@ -1,8 +1,8 @@
 import CarouselScroll from "@/app/components/Carousel";
 import Certificate from "@/app/components/Certificate";
+import CourseCurriculum from "@/app/components/CourseCurriculum";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
-import Curriculum from "@/app/components/course/Curriculum";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 
@@ -14,6 +14,7 @@ const images = [
     img: "/banner/2.png",
   },
 ];
+
 const Foundation = () => {
   return (
     <div className="flex flex-col w-full">
@@ -40,7 +41,12 @@ const Foundation = () => {
         discount={"3999"}
         message={"I am Interested in Stock Foundation Programme"}
       />
-      <Curriculum />
+      <CourseCurriculum
+        list1={list1}
+        list2={list2}
+        list3={list3}
+        list4={list4}
+      />
       <Providing />
       <Certificate />
     </div>
@@ -48,3 +54,30 @@ const Foundation = () => {
 };
 
 export default Foundation;
+
+const list1 = [
+  "Basics of Stock Market – A to Z ",
+  "Fundamental Analysis",
+  "Valuation Of Stocks",
+  "Candlestick Patterns ",
+];
+const list2 = [
+  "Wick Vs Body ",
+  "Types of Traders & Trading styles",
+  "Importance of Candle Closing ",
+  "Time Frame Study",
+];
+const list3 = [
+  "Chart Patterns",
+  "Identifying Trends",
+  "Support & Resistance",
+  "Breakouts | Reversal | Retests ",
+  "Multiple Websites Learning ",
+];
+const list4 = [
+  "Gap Theory   ",
+  "Indicators & Oscillators",
+  "Stock Selection Process   ",
+  "Risk Management",
+  "Trading System",
+];

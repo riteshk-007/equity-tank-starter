@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Course from "@/app/components/course/Course";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
 
@@ -23,6 +24,19 @@ const Foundation = () => {
           />
         </Link>
       </div>
+      <Course
+        img={"/banner/1.png"}
+        title={"Stock Foundation Programme"}
+        description1={
+          "This Course is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. "
+        }
+        description2={
+          "This course will make your foundaƟon strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks. "
+        }
+        price={"1999"}
+        discount={"3999"}
+        message={"I am Interested in Stock Foundation Programme"}
+      />
     </div>
   );
 };

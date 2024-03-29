@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Course from "@/app/components/course/Course";
 import Link from "next/link";
 import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
 
@@ -29,6 +30,19 @@ const SmartTraders = () => {
           />
         </Link>
       </div>
+      <Course
+        img={"/banner/1.png"}
+        title={"Smart Traders Course "}
+        description1={
+          "This Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept."
+        }
+        description2={
+          "This course will make your psychology strong and make you more accurate in your trading. At the end of your course, you’ll start doing trade like banks & Institutions."
+        }
+        price={"2499"}
+        discount={"5999"}
+        message={"I am Interested in Smart Traders Course"}
+      />
     </div>
   );
 };

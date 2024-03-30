@@ -33,6 +33,11 @@ const SmartTraders = () => {
           />
         </Link>
       </div>
+      <div className="flex items-center justify-center w-full my-5">
+        <span className="text-3xl md:text-5xl lg:text-6xl text-center font-bold text-[#03989e] dark:text-[#00c2cb]">
+          Smart Traders Course
+        </span>
+      </div>
       <Course
         img={"/banner/1.png"}
         title={"Smart Traders Course "}

@@ -7,7 +7,7 @@ import { PiTimerBold } from "react-icons/pi";
 const Providing = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-white dark:bg-black">
-      <p className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
+      <p className=" md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
         We Are Providing Various Additional Services To Our Students
       </p>
 
@@ -17,10 +17,10 @@ const Providing = () => {
             key={service.id}
             className="flex items-center justify-start gap-2 p-2 sm:p-3 md:p-4  rounded-lg"
           >
-            <span className="text-white rounded dark:text-white p-3 text-sm sm:text-md md:text-lg lg:text-2xl bg-[#03989e] dark:bg-[#00c2cb]">
+            <span className="text-white rounded dark:text-white p-3 text-lg lg:text-2xl bg-[#03989e] dark:bg-[#00c2cb]">
               {service.icon}
             </span>
-            <span className="text-black dark:text-white text-sm sm:text-md md:text-base">
+            <span className="text-black dark:text-white  md:text-base">
               {service.title}
             </span>
           </div>

@@ -27,6 +27,11 @@ const FuturesOptions = () => {
         </Link>
         <span className="text-2xl font-bold">3</span>
       </div>
+      <div className="flex items-center justify-center w-full my-5">
+        <span className="text-3xl md:text-5xl lg:text-6xl text-center font-bold text-[#03989e] dark:text-[#00c2cb]">
+          ET – Futures & Options
+        </span>
+      </div>
       <Course
         img={"/banner/1.png"}
         title={"ET – Futures & Options"}

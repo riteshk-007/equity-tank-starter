@@ -2,16 +2,7 @@ import { MdOutlineTimer } from "react-icons/md";
 import { RxLapTimer } from "react-icons/rx";
 import { FaCalendarDays } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
-import CarouselScroll from "../Carousel";
-const images = [
-  {
-    img: "/banner/1.png",
-  },
-  {
-    img: "/banner/2.png",
-  },
-];
-
+import Image from "next/image";
 const Course = ({
   title,
   description1,
@@ -19,25 +10,32 @@ const Course = ({
   price,
   discount,
   message,
+  img,
 }) => {
   return (
-    <div className="flex items-center justify-center flex-col md:flex-row p-2">
-      <div className="w-full md:w-1/2">
-        <CarouselScroll images={images} timing={2500} />
+    <div className="flex items-center justify-center flex-col lg:flex-row p-2">
+      <div className="w-full lg:w-1/2">
+        <Image
+          src={img}
+          width={1920}
+          height={1080}
+          alt="Resources"
+          className="px-5 lg:px-10 w-full"
+        />
       </div>
-      <div className="w-full p-1 md:w-1/2 flex items-center justify-center flex-col shadow-md mt-5 rounded-lg border  m-1">
-        <span className="md:text-2xl text-lg font-bold text-[#03989e] dark:text-[#00c2cb]  text-center">
+      <div className="w-full p-1 lg:w-1/2 flex items-center justify-center flex-col shadow-md mt-5 rounded-lg border  m-1">
+        <span className="md:text-4xl text-2xl font-bold text-[#03989e] dark:text-[#00c2cb]  text-center">
           {title}
         </span>
-        <p className="text-start text-sm text-gray-800 dark:text-gray-300 p-1">
+        <p className="text-start text-base text-gray-800 dark:text-gray-300 p-1">
           {description1}
         </p>
-        <p className="text-start text-sm text-gray-800 dark:text-gray-200 p-1 font-semibold">
+        <p className="text-start text-base text-gray-800 dark:text-gray-200 p-1 font-semibold">
           {description2}
         </p>
-        <div className="w-full border flex items-center justify-center bg-gray-200 rounded dark:bg-gray-900 my-3">
-          <div className="lg:w-1/2 flex items-start justify-center p-2 flex-col space-y-3 my-3">
-            <span className="text-xs md:text-sm text-gray-800 dark:text-gray-300 flex items-center justify-center gap-3 font-semibold">
+        <div className="w-full  flex items-center justify-center bg-gray-200 rounded dark:bg-gray-900 my-3">
+          <div className="md:w-1/2 flex items-start justify-center p-2 flex-col space-y-3 my-3">
+            <span className="text-sm md:text-base text-gray-800 dark:text-gray-300 flex items-center justify-center gap-2 font-semibold">
               <MdOutlineTimer className="text-2xl text-[#03989e] dark:text-[#00c2cb]" />
               <span>
                 Duration:{" "}
@@ -47,7 +45,7 @@ const Course = ({
               </span>
             </span>
 
-            <span className="text-xs md:text-sm text-gray-800 dark:text-gray-300 flex items-center justify-center gap-3 font-semibold">
+            <span className="text-sm md:text-base text-gray-800 dark:text-gray-300 flex items-center justify-center gap-2 font-semibold">
               <RxLapTimer className="text-2xl text-[#03989e] dark:text-[#00c2cb]" />
               <span>
                 Timing:{" "}
@@ -57,7 +55,7 @@ const Course = ({
               </span>
             </span>
 
-            <span className="text-xs md:text-sm text-gray-800 dark:text-gray-300 flex items-center justify-center gap-3 font-semibold">
+            <span className="text-sm md:text-base text-gray-800 dark:text-gray-300 flex items-center justify-center gap-2 font-semibold">
               <FaCalendarDays className="text-2xl text-[#03989e] dark:text-[#00c2cb]" />
               <span>
                 Days:{" "}
@@ -67,22 +65,24 @@ const Course = ({
               </span>
             </span>
           </div>
-          <div className="lg:w-1/2 flex items-center justify-center p-2 flex-col space-y-1">
-            <p>Price</p>
-            <h1 className="text-[#03989e] dark:text-[#00c2cb] text-2xl font-bold flex gap-1">
-              <span className="text-[#03989e] dark:text-[#00c2cb] text-2xl font-bold flex gap-1">
-                <FaRupeeSign className="text-2xl" />
-                {price}/-
+          <div className="md:w-1/2 flex items-end justify-center ">
+            <div className="w-full flex items-center justify-center p-2 flex-col space-y-1">
+              <p>Price</p>
+              <h1 className="text-[#03989e] dark:text-[#00c2cb] text-2xl font-bold flex gap-1">
+                <span className="text-[#03989e] dark:text-[#00c2cb] text-2xl md:text-4xl font-bold flex gap-1">
+                  <FaRupeeSign className="text-2xl" />
+                  {price}/-
+                </span>
+              </h1>
+
+              <span className="line-through text-gray-400 dark:text-gray-500">
+                {discount}/-
               </span>
-            </h1>
 
-            <span className="line-through text-gray-400 dark:text-gray-500">
-              {discount}/-
-            </span>
-
-            <span className="text-sm text-gray-800 dark:text-gray-300">
-              per month
-            </span>
+              <span className="text-sm text-gray-800 dark:text-gray-300">
+                per month
+              </span>
+            </div>
           </div>
         </div>
         <span className="w-full flex items-center justify-center px-1 my-2">

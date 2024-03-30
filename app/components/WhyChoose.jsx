@@ -41,7 +41,7 @@ const WhyChoose = () => {
             <div className="mx-auto container w-full flex flex-col justify-center items-center">
               <div className="flex justify-center items-center flex-col">
                 <div className="mt-20">
-                  <h2 className="lg:text-6xl md:text-5xl text-2xl font-black text-center leading-10 text-[#03989e] dark:text-[#00c2cb] ">
+                  <h2 className="lg:text-6xl md:text-5xl text-2xl font-black text-center  text-[#03989e] dark:text-[#00c2cb] ">
                     Why Choose Us?
                   </h2>
                 </div>
@@ -59,14 +59,14 @@ const WhyChoose = () => {
           </div>
           <div className="mx-auto container  md:-mt-28 -mt-20 flex justify-center items-center">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-x-2 gap-y-2 lg:gap-x-6 md:gap-x-6 md:gap-y-6 ">
-              <div className="flex justify-center flex-col items-center w-36 h-36 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
-                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
+              <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
+                <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <FcGoogle fontSize={40} /> Reviews
                 </p>
-                <h2 className="lg:text-3xl md:text-2xl text-xl font-extrabold leading-10 text-center text-gray-200 dark:text-gray-800">
+                <h2 className="lg:text-3xl md:text-2xl text-xl font-extrabold  text-center text-gray-200 dark:text-gray-800">
                   4.6 Ratings
                 </h2>
-                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center  flex items-center justify-center gap-1 text-yellow-400">
+                <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center  flex items-center justify-center gap-1 text-yellow-400">
                   <IoIosStar />
                   <IoIosStar />
                   <IoIosStar />
@@ -74,27 +74,27 @@ const WhyChoose = () => {
                   <LiaStarHalf />
                 </p>
               </div>
-              <div className="flex justify-center flex-col items-center w-36 h-36 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
-                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
+              <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
+                <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <MdGroups fontSize={40} />
                 </p>
-                <h2 className="lg:text-xl md:text-lg text-base font-extrabold leading-10 px-2 text-center text-gray-200 dark:text-gray-800">
+                <h2 className="lg:text-xl md:text-lg text-base font-extrabold  px-2 text-center text-gray-200 dark:text-gray-800">
                   1500+ Session Completed
                 </h2>
               </div>
-              <div className="flex justify-center flex-col items-center w-36 h-36 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
-                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
+              <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
+                <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <GiTeacher fontSize={40} />
                 </p>
-                <h2 className="lg:text-xl md:text-lg text-base font-extrabold leading-10 px-2 text-center text-gray-200 dark:text-gray-800">
+                <h2 className="lg:text-xl md:text-lg text-base font-extrabold  px-2 text-center text-gray-200 dark:text-gray-800">
                   13 Dedicated Mentors
                 </h2>
               </div>
-              <div className="flex justify-center flex-col items-center w-36 h-36 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
-                <p className="mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
+              <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
+                <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <PiStudentBold fontSize={40} />
                 </p>
-                <h2 className="lg:text-xl md:text-lg text-base font-extrabold leading-10 px-2 text-center text-gray-200 dark:text-gray-800">
+                <h2 className="lg:text-xl md:text-lg text-base font-extrabold  px-2 text-center text-gray-200 dark:text-gray-800">
                   100+ Student Trained Offline
                 </h2>
               </div>

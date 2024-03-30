@@ -19,6 +19,7 @@ const Foundation = () => {
   return (
     <div className="flex flex-col w-full">
       <CarouselScroll images={images} timing={2000} />
+
       <div className="flex mx-auto items-center justify-center gap-2 my-5">
         <span className="text-2xl font-bold">1</span>
         <Link href={"/smart-traders"}>
@@ -28,6 +29,11 @@ const Foundation = () => {
           />
         </Link>
       </div>
+      <div className="flex items-center justify-center w-full my-5">
+        <span className="text-3xl md:text-5xl lg:text-6xl text-center font-bold text-[#03989e] dark:text-[#00c2cb]">
+          Stock Foundation Programme
+        </span>
+      </div>
       <Course
         img={"/banner/1.png"}
         title={"Stock Foundation Programme"}
@@ -35,7 +41,7 @@ const Foundation = () => {
           "This Course is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. "
         }
         description2={
-          "This course will make your foundaƟon strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks. "
+          "This course will make your foundation strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks. "
         }
         price={"1999"}
         discount={"3999"}
@@ -57,7 +63,7 @@ export default Foundation;
 
 const list1 = [
   "Basics of Stock Market – A to Z ",
-  "Fundamental Analysis",
+  "Fundamental Analysis of Company & Industry",
   "Valuation Of Stocks",
   "Candlestick Patterns ",
 ];

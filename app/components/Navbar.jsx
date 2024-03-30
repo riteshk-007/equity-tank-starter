@@ -39,7 +39,7 @@ const Navbar = () => {
       <nav
         className={`bg-white dark:bg-black z-[100] start-0 border-b border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
           isSticky
-            ? "sticky top-0 md:translate-y-3 md:w-3/4 lg:w-4/5 mx-auto md:rounded-3xl md:shadow-md z-[100] transition-all duration-300"
+            ? "sticky top-0 md:translate-y-3 md:w-4/5 mx-auto md:rounded-3xl md:shadow-md z-[100] transition-all duration-300"
             : "w-full z-[100] "
         }  dark:shadow-[0_0_1px_#fff,inset_0_0_1px_#fff,0_0_3px_#00c2cb,0_0_10px_#00c2cb,0_0_15px_#00c2cb]`}
       >
@@ -178,14 +178,43 @@ const Navbar = () => {
                       className="z-50 absolute md:left-1/2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                     >
                       <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-                        <li>
-                          <Link
-                            href="/"
+                        <li className="relative group">
+                          <span
                             onClick={() => setIsOpen(false)}
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="flex items-center gap-2  cursor-pointer justify-start px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                           >
-                            Online Courses
-                          </Link>
+                            Offline Courses
+                            <FaAngleDown className="-rotate-90" />
+                          </span>
+                          <ul className="absolute -right-full top-0 mt-2 space-y-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 invisible group-hover:visible">
+                            <li>
+                              <Link
+                                href="/foundation"
+                                onClick={() => setIsOpen(false)}
+                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-sm"
+                              >
+                                Stock Foundation Programme - Basic
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/smart-traders"
+                                onClick={() => setIsOpen(false)}
+                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-sm"
+                              >
+                                Smart Trader Course -Advance
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/futures-options"
+                                onClick={() => setIsOpen(false)}
+                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white text-sm"
+                              >
+                                ET- Futures & Options
+                              </Link>
+                            </li>
+                          </ul>
                         </li>
                         <li>
                           <Link
@@ -193,7 +222,7 @@ const Navbar = () => {
                             onClick={() => setIsOpen(false)}
                             className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                           >
-                            Offline Courses
+                            Online Courses
                           </Link>
                         </li>
                       </ul>

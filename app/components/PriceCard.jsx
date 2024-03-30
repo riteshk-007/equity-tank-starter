@@ -15,7 +15,7 @@ const PriceCard = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2 md:gap-4 p-5  dark:bg-black">
       <p className="text-xl md:text-3xl font-semibold text-gray-500 dark:text-gray-300 text-center uppercase">
-        OUR COURSES
+        OUR OFFLine COURSES
       </p>
       <h1 className="text-base md:text-4xl font-bold text-center text-[#03989e] dark:text-[#00c2cb] ">
         We Offer Following Stock Trading Courses
@@ -85,7 +85,7 @@ export const Card = [
     id: 1,
     title: "Stock Foundation Programme ",
     image: "/banner/1.png",
-    text: "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore ut veritatis esse voluptatum consectetur autem voluptatibus beatae aspernatur corrupti fugiat libero nobis, aut consequatur suscipit vel magni commodi explicabo mollitia? Illo omnis accusamus nesciunt numquam dolore architecto quaerat facilis!    ",
+    text: "This Course is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. This course will make your foundation strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks.",
     price: 1999,
     discount: 3999,
     paymentType: "monthly",
@@ -96,7 +96,7 @@ export const Card = [
     id: 2,
     title: "Smart Trader Course – Advance ",
     image: "/banner/2.png",
-    text: "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore ut veritatis esse voluptatum consectetur autem voluptatibus beatae aspernatur corrupti fugiat libero nobis, aut consequatur suscipit vel magni commodi explicabo mollitia? Illo omnis accusamus nesciunt numquam dolore architecto quaerat facilis!    ",
+    text: "This Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept. This course will make your psychology strong and make you more accurate in your trading. At the end of your course, you’ll start doing trade like banks & Institutions.",
     price: 2499,
     discount: 5999,
     paymentType: "monthly",
@@ -107,7 +107,7 @@ export const Card = [
     id: 3,
     title: "ET – Futures & Options",
     image: "/banner/3.png",
-    text: "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolore ut veritatis esse voluptatum consectetur autem voluptatibus beatae aspernatur corrupti fugiat libero nobis, aut consequatur suscipit vel magni commodi explicabo mollitia? Illo omnis accusamus nesciunt numquam dolore architecto quaerat facilis!    ",
+    text: "This Course is designed for Traders who want to learn about Futures & OpƟons in depth and also want to trade in specially options. This course is designed for those who want to trade options professionally, in this course you will get to know how options premium calculated with the help of Greeks. Whether the options premium is cheap or expensive, when to be an option buyer and when to be a seller.",
     price: 2999,
     discount: 6999,
     paymentType: "one time",

@@ -6,12 +6,12 @@ const AboutUs = () => {
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
         About Us
       </h1>
-      <span className="text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
+      <h1 className="text-lg md:text-xl text-center text-[#03989e] dark:text-[#00c2cb] leading-10 gap-2 font-bold">
         Equity Tank –{" "}
-        <p className="text-sm sm:text-md md:text-lg lg:text-xl text-center text-black dark:text-gray-200 font-light flex gap-2">
+        <span className="text-black dark:text-white font-light">
           Stock Market Institute In Delhi Since 2021
-        </p>
-      </span>
+        </span>{" "}
+      </h1>
       <div className="flex flex-col md:flex-row w-full items-center justify-center p-5 md:p-10">
         <div className="w-full md:w-1/2 flex items-center justify-center bg-cover">
           <Image

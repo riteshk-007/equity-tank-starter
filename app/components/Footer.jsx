@@ -76,7 +76,7 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium text-sm">
                 <li className="mb-4">
-                  <Link href="/" className="hover:underline">
+                  <Link href="/resources" className="hover:underline">
                     Resources
                   </Link>
                 </li>

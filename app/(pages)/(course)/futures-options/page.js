@@ -36,7 +36,7 @@ const FuturesOptions = () => {
         img={"/banner/1.png"}
         title={"ET – Futures & Options"}
         description1={
-          "This Course is designed for Traders who want to learn about Futures & OpƟons in depth and also want to trade in specially options."
+          "This Course is designed for Traders who want to learn about Futures & Options in depth and also want to trade in specially options."
         }
         description2={
           "This course is designed for those who want to trade options professionally, in this course you will get to know how options premium calculated with the help of Greeks. Whether the options premium is cheap or expensive, when to be an option buyer and when to be a seller. "

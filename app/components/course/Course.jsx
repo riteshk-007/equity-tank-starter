@@ -87,7 +87,7 @@ const Course = ({
         </div>
         <span className="w-full flex items-center justify-center px-1 my-2">
           <a
-            href={`https://wa.me/+918750475852?text=${message}`}
+            href={`https://wa.me/+919315071969?text=${message}`}
             target="_blank"
             className="w-full"
             rel="noreferrer"

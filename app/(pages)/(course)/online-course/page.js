@@ -1,4 +1,5 @@
 import CarouselScroll from "@/app/components/Carousel";
+import CourseCurriculum from "@/app/components/CourseCurriculum";
 import Course from "@/app/components/course/Course";
 import React from "react";
 
@@ -39,6 +40,12 @@ const OnliceCourse = () => {
           discount={"5999"}
           message={"I am Interested in Smart Traders Course"}
         />
+        <CourseCurriculum
+          list1={list1}
+          list2={list2}
+          list3={list3}
+          list4={list4}
+        />
       </div>
       <div className="">
         <div className="flex items-center justify-center w-full my-5">
@@ -59,9 +66,68 @@ const OnliceCourse = () => {
           discount={"6999"}
           message={"I am Interested in ET – Futures & Options"}
         />
+        <CourseCurriculum
+          list1={list5}
+          list2={list6}
+          list3={list7}
+          list4={list8}
+        />
       </div>
     </div>
   );
 };
 
 export default OnliceCourse;
+
+const list1 = [
+  "Importance of Price Action",
+  "Demand & Supply theory – Data Based",
+  "Trading on Multiple Time Frames ",
+  "How to pick a perfect time frame based on your trading style   ",
+];
+const list2 = [
+  "How to scan stock in the live market",
+  "Trend Analysis",
+  "Risk Management & Position size",
+  "How to Analyse a Sector to Find the blockbuster opportunity",
+];
+const list3 = [
+  "Moving Average (Simple, Exponential, Linearly Weighted) ",
+  "Algo Trader (How we can take advantage from them)",
+  "Market Traps",
+  "Trading against the Trend",
+];
+const list4 = [
+  "Conventional patterns V/s Demand & Supply",
+  "Gap Theory",
+  "Trading Indicators with Demand & Supply",
+  "Trading Psychology- How to overcome fear and greed ",
+];
+
+const list5 = [
+  "Options Foundation",
+  "Why trade Options ",
+  "Benefits of Trading Options",
+  "Risk Correlations",
+  "Intrinsic Value / Time Value",
+];
+const list6 = [
+  "Breakeven",
+  "Moneyness : (ITM/ATM/OTM) ",
+  "Options Buying vs. Options Selling",
+  "Importance & Risk factor of Options writing ",
+  "How to choose the right strike and expiry",
+];
+const list7 = [
+  "Implied Volatility - The game changer for Options premium",
+  "Delta/Theta/Vega/Gamma/Rho ",
+  "Long Call (Debit) / Long Put (Debit) / Short Call (Credit) / Short Put (Credit) ",
+  "Anchor Unit and Offset Unit",
+  "Multi-leg Strategies ",
+];
+const list8 = [
+  "Non-directional Strategies",
+  "Other Strategies ",
+  "Role of Open Interest ",
+  "Options for Rental Income",
+];

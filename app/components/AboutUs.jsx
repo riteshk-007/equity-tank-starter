@@ -12,7 +12,7 @@ const AboutUs = () => {
           Stock Market Institute In Delhi Since 2021
         </span>{" "}
       </h1>
-      <div className="mb-20">
+      <section className="mb-20">
         <div className="flex flex-wrap">
           <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div className="flex lg:py-12">
@@ -26,13 +26,13 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
-            <div className="flex h-full items-center rounded-lg p-6 text-center bg-gray-300 shadow-2xl dark:bg-gray-800 lg:pl-12 lg:text-left">
+            <div className="flex h-full items-center rounded-lg bg-gray-300 shadow-2xl dark:bg-gray-800 p-6 text-center  lg:pl-12 lg:text-left">
               <div className="lg:pl-12">
-                <h2 className="mb-5 text-3xl font-bold">
+                <h2 className="mb-2 text-3xl font-bold">
                   Welcome, to the Leading Best Stock Market Institute In Delhi
                   Since 2021.
                 </h2>
-                <span className="mb-5 pb-2 lg:pb-0 text-[0.9rem] text-gray-700 font-semibold dark:text-gray-200">
+                <span className="mb-2 pb-2 lg:pb-0 text-[0.9rem] text-gray-700 font-semibold dark:text-gray-200">
                   Equity Tank (An ISO 21008:2018 Certified Institute) is the
                   Best Stock Market Institute In Delhi, that provides you best
                   guidance & leadership in Stock Market with our offered
@@ -58,15 +58,14 @@ const AboutUs = () => {
                   levels then join us. We assure genuine support and skilful
                   guidance of stock market.
                 </span>
-
-                <h1 className="text-xl md:text-2xl mt-3 capitalize  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
+                <h1 className="text-xl md:text-2xl mt-2 capitalize  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
                   Our Mission Is To Make People Financial Strong And Independent
                 </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

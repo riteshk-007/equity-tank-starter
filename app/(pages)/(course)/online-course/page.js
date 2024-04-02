@@ -11,7 +11,7 @@ const images = [
     img: "/banner/2.png",
   },
   {
-    img: "/banner/3.png",
+    img: "/banner/4.png",
   },
 ];
 const OnliceCourse = () => {

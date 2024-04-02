@@ -4,16 +4,14 @@ import CarouselScroll from "./Carousel";
 
 const images = [
   {
-    img: "/banner/1.png",
+    img: "/banner/4.png",
   },
+
   {
     img: "/banner/2.png",
   },
   {
-    img: "/banner/3.png",
-  },
-  {
-    img: "/banner/4.png",
+    img: "/banner/1.png",
   },
 ];
 const Hero = () => {

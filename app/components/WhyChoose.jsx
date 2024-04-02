@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const WhyChoose = () => {
   return (
-    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-gray-100 dark:bg-black/30">
+    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-white dark:bg-black/30">
       <div className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">

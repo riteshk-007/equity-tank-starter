@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col">
       <Hero />
-      <Know />
       <AboutUs />
+      <Know />
       <PriceCard />
       <WhyChoose />
       <BrokenCard />

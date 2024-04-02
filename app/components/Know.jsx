@@ -19,10 +19,10 @@ const Know = () => {
               <h1 className="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64">
                 We Know The Value Of Your Trust !!
               </h1>
-              <p className="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+              <span className="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                 On Path To Become India’s Best Affordable & Trustable <br />{" "}
                 <p className="font-semibold my-2">Stock Market Institute</p>
-              </p>
+              </span>
             </div>
             <Link href="/about" className="md:mt-12 mt-20">
               <button className="text-base font-medium leading-4 text-[#00c2cb] dark:bg-black  sm:w-auto w-full rounded p-4 focus:outline-none bg-gray-100 focus:ring-2 focus:ring-offset-1 focus:ring-[#00c2cb]">

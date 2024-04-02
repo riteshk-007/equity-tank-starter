@@ -27,12 +27,12 @@ const WhyChoose = () => {
               <h3 className="text-[#03989e] dark:text-[#00c2cb] font-semibold">
                 Professional services
               </h3>
-              <p className="text-gray-800 text-3xl dark:text-gray-400  font-semibold sm:text-4xl">
+              <h2 className="text-gray-800 text-3xl dark:text-gray-400  font-semibold sm:text-4xl">
                 Why Choose Equity Tank?
-              </p>
-              <p className="text-gray-800  dark:text-gray-400 text-xl font-semibold sm:text-2xl">
+              </h2>
+              <h4 className="text-gray-800  dark:text-gray-400 text-xl font-semibold sm:text-2xl">
                 We Simplified Chart Trading !
-              </p>
+              </h4>
               <p className="mt-3 text-gray-600 dark:text-gray-200">
                 Equity Tank Institute is focusing on evolving Traders, With
                 Lifetime mentorship and one-on-one guidance to all our students.

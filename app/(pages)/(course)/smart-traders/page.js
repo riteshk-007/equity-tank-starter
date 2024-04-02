@@ -39,7 +39,9 @@ const SmartTraders = () => {
         </span>
       </div>
       <Course
-        img={"/banner/1.png"}
+        img={
+          "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
         title={"Smart Traders Course "}
         description1={
           "This Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept."

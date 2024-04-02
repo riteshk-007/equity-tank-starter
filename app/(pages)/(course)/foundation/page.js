@@ -35,7 +35,9 @@ const Foundation = () => {
         </span>
       </div>
       <Course
-        img={"/banner/1.png"}
+        img={
+          "https://images.unsplash.com/reserve/YEc7WB6ASDydBTw6GDlF_antalya-beach-lulu.jpg?q=80&w=1901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
         title={"Stock Foundation Programme"}
         description1={
           "This Course is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. "

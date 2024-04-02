@@ -47,7 +47,7 @@ const AboutUs = () => {
                 </span>
                 <br />
                 <br />
-                <span className="mb-5 pb-2 lg:pb-0 text-[0.9rem] text-gray-700 font-semibold dark:text-gray-200">
+                <span className="mb-2 pb-2 lg:pb-0 text-[0.9rem] text-gray-700 font-semibold dark:text-gray-200">
                   Equity Tank (An ISO 21008:2018 Certified Institute) Is the Top
                   Offline Stock Market Study Centre In Delhi which provides best
                   learning environment for learning traders. Here We’ll Teach
@@ -59,7 +59,7 @@ const AboutUs = () => {
                   guidance of stock market.
                 </span>
 
-                <h1 className="text-xl md:text-2xl mt-5 capitalize  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
+                <h1 className="text-xl md:text-2xl mt-3 capitalize  font-bold text-center bg-clip-text text-transparent bg-gradient-to-r  dark:from-[#00c2cb] dark:to-green-600  from-[#1a8085] to-green-400">
                   Our Mission Is To Make People Financial Strong And Independent
                 </h1>
               </div>

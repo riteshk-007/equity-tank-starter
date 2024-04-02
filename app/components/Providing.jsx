@@ -1,32 +1,42 @@
 import { IoPricetagsOutline } from "react-icons/io5";
 import { GrSystem } from "react-icons/gr";
-import { BiRevision, BiCertification } from "react-icons/bi";
-import { FaChartLine } from "react-icons/fa";
+import { BiRevision } from "react-icons/bi";
+import { FaChartLine, FaAward } from "react-icons/fa";
 import { PiTimerBold } from "react-icons/pi";
 
 const Providing = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-white dark:bg-black">
-      <p className=" md:text-lg lg:text-xl font-semibold text-center text-[#03989e] dark:text-[#00c2cb] p-3 sm:p-4 md:p-5 flex gap-2">
-        We Are Providing Various Additional Services To Our Students
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-5 ">
-        {Services.map((service) => (
-          <div
-            key={service.id}
-            className="flex items-center justify-start gap-2 p-2 sm:p-3 md:p-4  rounded-lg"
-          >
-            <span className="text-white rounded dark:text-white p-3 text-lg lg:text-2xl bg-[#03989e] dark:bg-[#00c2cb]">
-              {service.icon}
-            </span>
-            <span className="text-black dark:text-white  md:text-base">
-              {service.title}
-            </span>
+    <section className="bg-gray-200 dark:bg-black w-full">
+      <div className="py-16">
+        <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
+          <div className=" mx-auto space-y-3 text-center">
+            <h3 className="text-[#03989e] font-semibold">Features</h3>
+            <p className="text-gray-800 dark:text-gray-400 text-3xl font-semibold sm:text-4xl">
+              We Are Providing Various Additional Services To Our Students
+            </p>
           </div>
-        ))}
+          <div className="mt-12">
+            <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+              {Services.map((item, idx) => (
+                <li key={idx} className="flex gap-x-4">
+                  <div className="flex-none w-12 h-12 bg-[#03989e] dark:bg-[#00c2cb] text-white rounded-lg flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h4 className="text-lg text-gray-800 dark:text-gray-200 font-semibold">
+                      {item.title}
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm font-light">
+                      {item.des}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -35,31 +45,37 @@ const Services = [
   {
     id: 1,
     title: "Lifetime Mentorship Support",
-    icon: <PiTimerBold />,
+    icon: <PiTimerBold fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
   {
     id: 2,
     title: "Advance Price Action Guidance ",
-    icon: <IoPricetagsOutline />,
+    icon: <IoPricetagsOutline fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
   {
     id: 3,
     title: "Trading System Guidance",
-    icon: <GrSystem />,
+    icon: <GrSystem fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
   {
     id: 4,
     title: "Revision Classes ",
-    icon: <BiRevision />,
+    icon: <BiRevision fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
   {
     id: 5,
     title: "Convert Yourself Into A Pro",
-    icon: <FaChartLine />,
+    icon: <FaChartLine fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
   {
     id: 6,
     title: "Equity Tank ISO Certification",
-    icon: <BiCertification />,
+    icon: <FaAward fontSize={25} />,
+    des: "We provide lifetime mentorship support to our students, so that they can clear their doubts and queries anytime.",
   },
 ];

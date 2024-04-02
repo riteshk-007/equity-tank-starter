@@ -6,33 +6,59 @@ import { LiaStarHalf } from "react-icons/lia";
 import { MdGroups } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
 import Providing from "./Providing";
+import Link from "next/link";
 
 const WhyChoose = () => {
   return (
     <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col items-center justify-center gap-2 md:gap-4  bg-gray-100 dark:bg-black/30">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 md:mb-5 text-center p-5">
-        Why Choose Equity Tank?
-      </h1>
-      <div className="flex flex-col md:flex-row w-full items-center justify-center p-5 md:p-10">
-        <div className="w-full md:w-1/2 flex items-center justify-center bg-cover">
-          <Image
-            width={400}
-            height={300}
-            src="https://images.unsplash.com/photo-1682687982049-b3d433368cd1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Equity Tank"
-            className="rounded-lg"
-          />
+      <div className="py-14">
+        <div className="max-w-screen-xl mx-auto md:px-8">
+          <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
+            <div className="flex-1 sm:hidden lg:block">
+              <Image
+                width={774}
+                height={516}
+                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                className="md:max-w-lg sm:rounded-lg"
+                alt="know me"
+              />
+            </div>
+            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+              <h3 className="text-[#03989e] dark:text-[#00c2cb] font-semibold">
+                Professional services
+              </h3>
+              <p className="text-gray-800 text-3xl dark:text-gray-400  font-semibold sm:text-4xl">
+                Why Choose Equity Tank?
+              </p>
+              <p className="text-gray-800  dark:text-gray-400 text-xl font-semibold sm:text-2xl">
+                We Simplified Chart Trading !
+              </p>
+              <p className="mt-3 text-gray-600 dark:text-gray-200">
+                Equity Tank Institute is focusing on evolving Traders, With
+                Lifetime mentorship and one-on-one guidance to all our students.
+                Our goal is to build a strong community of traders.
+              </p>
+              <Link
+                href="/about"
+                className="inline-flex gap-x-1 items-center text-[#03989e] dark:text-[#00c2cb] hover:text-[#2f9194] duration-150 font-medium"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
-        <span className="text-xs lg:text-sm  mx-2  text-gray-700 dark:text-gray-300 text-start w-full md:w-1/2  my-3 flex flex-col">
-          <p className="my-2 capitalize  font-semibold">
-            We Simplified Chart Trading !
-          </p>
-          <p className="my-2 ">
-            Equity Tank Institute is focusing on evolving Traders, With Lifetime
-            mentorship and one-on-one guidance to all our students. Our goal is
-            to build a strong community of traders.
-          </p>
-        </span>
       </div>
       <Providing />
       <div className=" mt-5 w-full p-5">

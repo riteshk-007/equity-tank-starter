@@ -1,10 +1,9 @@
 import CarouselScroll from "@/app/components/Carousel";
 import Certificate from "@/app/components/Certificate";
 import CourseCurriculum from "@/app/components/CourseCurriculum";
+import Pagination from "@/app/components/Pagination";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
-import Link from "next/link";
-import { IoMdArrowDropright, IoMdArrowDropleft } from "react-icons/io";
 
 const images = [
   {
@@ -18,21 +17,11 @@ const SmartTraders = () => {
   return (
     <div className="flex flex-col w-full">
       <CarouselScroll images={images} timing={2000} />
-      <div className="flex mx-auto items-center justify-center gap-2 my-5">
-        <Link href={"/foundation"}>
-          <IoMdArrowDropleft
-            fontSize={35}
-            className="text-[#03989e] dark:text-[#00c2cb] cursor-pointer"
-          />
-        </Link>
-        <span className="text-2xl font-bold">2</span>
-        <Link href={"/futures-options"}>
-          <IoMdArrowDropright
-            fontSize={35}
-            className="text-[#03989e] dark:text-[#00c2cb] cursor-pointer"
-          />
-        </Link>
-      </div>
+      <Pagination
+        num={2}
+        rightLink={"/futures-options"}
+        leftLink={"/foundation"}
+      />
       <div className="flex items-center justify-center w-full my-5">
         <span className="text-3xl md:text-5xl lg:text-6xl text-center font-bold text-[#03989e] dark:text-[#00c2cb]">
           Smart Traders Course

@@ -42,12 +42,7 @@ const SmartTraders = () => {
         discount={"5999"}
         message={"I am Interested in Smart Traders Course"}
       />
-      <CourseCurriculum
-        list1={list1}
-        list2={list2}
-        list3={list3}
-        list4={list4}
-      />
+      <CourseCurriculum list={list} />
       <Providing />
       <Certificate />
     </div>
@@ -56,27 +51,61 @@ const SmartTraders = () => {
 
 export default SmartTraders;
 
-const list1 = [
-  "Importance of Price Action",
-  "Demand & Supply theory – Data Based",
-  "Trading on Multiple Time Frames ",
-  "How to pick a perfect time frame based on your trading style   ",
-];
-const list2 = [
-  "How to scan stock in the live market",
-  "Trend Analysis",
-  "Risk Management & Position size",
-  "How to Analyse a Sector to Find the blockbuster opportunity",
-];
-const list3 = [
-  "Moving Average (Simple, Exponential, Linearly Weighted) ",
-  "Algo Trader (How we can take advantage from them)",
-  "Market Traps",
-  "Trading against the Trend",
-];
-const list4 = [
-  "Conventional patterns V/s Demand & Supply",
-  "Gap Theory",
-  "Trading Indicators with Demand & Supply",
-  "Trading Psychology- How to overcome fear and greed ",
+const list = [
+  {
+    title: "Level 1",
+    description: [
+      "Importance of Price Action",
+      "Demand & Supply theory – Data Based",
+      "Trading on Multiple Time Frames ",
+      "How to pick a perfect time frame based on your trading style   ",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 2",
+    description: [
+      "How to scan stock in the live market",
+      "Trend Analysis",
+      "Risk Management & Position size",
+      "How to Analyse a Sector to Find the blockbuster opportunity",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 3",
+    description: [
+      "Moving Average (Simple, Exponential, Linearly Weighted) ",
+      "Algo Trader (How we can take advantage from them)",
+      "Market Traps",
+      "Trading against the Trend",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 4",
+    description: [
+      "Conventional patterns V/s Demand & Supply",
+      "Gap Theory",
+      "Trading Indicators with Demand & Supply",
+      "Trading Psychology- How to overcome fear and greed ",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
 ];

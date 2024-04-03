@@ -43,12 +43,7 @@ const Foundation = () => {
         discount={"3999"}
         message={"I am Interested in Stock Foundation Programme"}
       />
-      <CourseCurriculum
-        list1={list1}
-        list2={list2}
-        list3={list3}
-        list4={list4}
-      />
+      <CourseCurriculum list={list} />
       <Providing />
       <Certificate />
     </div>
@@ -57,29 +52,64 @@ const Foundation = () => {
 
 export default Foundation;
 
-const list1 = [
-  "Basics of Stock Market – A to Z ",
-  "Fundamental Analysis of Company & Industry",
-  "Valuation Of Stocks",
-  "Candlestick Patterns ",
-];
-const list2 = [
-  "Wick Vs Body ",
-  "Types of Traders & Trading styles",
-  "Importance of Candle Closing ",
-  "Time Frame Study",
-];
-const list3 = [
-  "Chart Patterns",
-  "Identifying Trends",
-  "Support & Resistance",
-  "Breakouts | Reversal | Retests ",
-  "Multiple Websites Learning ",
-];
-const list4 = [
-  "Gap Theory   ",
-  "Indicators & Oscillators",
-  "Stock Selection Process   ",
-  "Risk Management",
-  "Trading System",
+const list = [
+  {
+    title: "Level 1",
+    description: [
+      "Introduction to Stock Market",
+      "Market Participants",
+      "Types of Market",
+      "Introduction to Technical Analysis",
+      "Candlestick Patterns",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 2",
+    description: [
+      "Wick Vs Body ",
+      "Types of Traders & Trading styles",
+      "Importance of Candle Closing ",
+      "Time Frame Study",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 3",
+    description: [
+      "Chart Patterns",
+      "Identifying Trends",
+      "Support & Resistance",
+      "Breakouts | Reversal | Retests ",
+      "Multiple Websites Learning ",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
+  {
+    title: "Level 4",
+    description: [
+      "Gap Theory   ",
+      "Indicators & Oscillators",
+      "Stock Selection Process   ",
+      "Risk Management",
+      "Trading System",
+    ],
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        <h2 className="text-2xl font-bold">Equity Tank</h2>
+      </div>
+    ),
+  },
 ];

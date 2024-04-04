@@ -14,8 +14,12 @@ const FaqQuesAns = ({ numQuestions }) => {
       <Accordion type="single" collapsible className="w-full">
         {questions?.slice(0, numQuestions).map((question, index) => (
           <AccordionItem value={`item-${index + 1}`} key={`item-${index + 1}`}>
-            <AccordionTrigger>{question.trigger}</AccordionTrigger>
-            <AccordionContent>{question.content}</AccordionContent>
+            <AccordionTrigger className="text-start">
+              {question.trigger}
+            </AccordionTrigger>
+            <AccordionContent className="text-start">
+              {question.content}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
@@ -26,13 +30,32 @@ export default FaqQuesAns;
 
 const questions = [
   {
-    trigger: "What is the purpose of this website?",
+    trigger: "Can i Attend Demo Class for free ?",
     content:
-      "This website is a collection of my personal projects, blog posts, and other content that I want to share with the world. I built this website to showcase my work and to help others learn from my experiences.",
+      "Yes, anyone can take one demo class for free in any course. I am very new in this market, and i want to learn from very basics. -You can enrol for 'Stock Foundation Programme' Course. here you will learn a lot about stock market from very basics and all important concepts.",
   },
   {
-    trigger: "How can I contact you?",
+    trigger: "Is trading in share market is risky ?",
     content:
-      "You can contact me by sending an email to  [email protected] or by filling out the contact form on the Contact page. I will do my best to respond to your message as soon as possible.",
+      "Yes, it is risky for those who trade without any proper training and knowledge.",
+  },
+  {
+    trigger: "Do you teach Price Action ?",
+    content:
+      "Yes, we have a Lot of strategies that are purely based on Price Action.",
+  },
+  {
+    trigger:
+      "I am a trader and I only need strategies. Will it be useful for me ?",
+    content:
+      "Yes, our Trading courses are very Helpful for those who are already doing trading and want to do trading in a professional way.",
+  },
+  {
+    trigger: "What's the accuracy of your strategies ?",
+    content: "Our strategies are 75-80% accurate",
+  },
+  {
+    trigger: "After course, can i still come to your offline classes?",
+    content: "Yes, you can visit anytime for trade practice & revision.",
   },
 ];

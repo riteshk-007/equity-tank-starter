@@ -10,7 +10,7 @@ const Providing = () => {
       <div className="py-16">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
           <div className=" mx-auto space-y-3 text-center">
-            <h3 className="text-[#03989e] font-semibold">Features</h3>
+            <h3 className="text-[#03989e] font-semibold text-3xl">Features</h3>
             <p className="text-gray-800 dark:text-gray-400 text-3xl font-semibold sm:text-4xl">
               We Are Providing Various Additional Services To Our Students
             </p>

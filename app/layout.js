@@ -14,7 +14,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/sm-logo.svg" sizes="any" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system">
           <Navbar />

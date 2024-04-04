@@ -5,6 +5,7 @@ import {
   FaSquareInstagram,
   FaLinkedin,
 } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -32,10 +33,10 @@ const About = () => {
 
       <div className="lg:mt-14 sm:mt-10 mt-12">
         <Image
-          width={500}
-          height={300}
-          className="block w-full rounded-lg"
-          src="/banner/4.png"
+          width={1920}
+          height={1080}
+          className=" w-full rounded-lg"
+          src="/7.png"
           alt="about us image"
         />
       </div>
@@ -65,27 +66,56 @@ const About = () => {
           <h2 className="font-bold my-2 text-xl lg:leading-9 leading-7 text-gray-800 dark:text-gray-100">
             Our Mission Is To Make People Financially Strong And Independent
           </h2>
+          <h4 className="font-bold text-lg md:text-2xl text-[#03989e] dark:text-[#00c2cb] cursor-pointer mt-4">
+            Our Social Media Handles
+          </h4>
           <div className="flex items-center space-x-4 text-white my-3">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/equitytank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaSquareFacebook
                 fontSize={35}
                 className=" transition duration-300 bg-[#3b5998] hover:bg-[#4267B2] p-2 rounded-full"
               />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/equitytank?s=20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaXTwitter
                 fontSize={35}
                 className=" transition duration-300 bg-[#3b5998] hover:bg-[#4267B2] p-2 rounded-full"
               />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/equitytank/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaSquareInstagram
                 fontSize={35}
                 className=" transition duration-300 bg-[#3b5998] hover:bg-[#4267B2] p-2 rounded-full"
               />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/equitytank-institute/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin
+                fontSize={35}
+                className=" transition duration-300 bg-[#3b5998] hover:bg-[#4267B2] p-2 rounded-full"
+              />
+            </a>
+            <a
+              href="http://www.youtube.com/@EquityTank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube
                 fontSize={35}
                 className=" transition duration-300 bg-[#3b5998] hover:bg-[#4267B2] p-2 rounded-full"
               />
@@ -94,10 +124,10 @@ const About = () => {
         </div>
         <div className="lg:flex items-center w-full lg:w-1/2 ">
           <Image
-            width={400}
-            height={300}
+            width={800}
+            height={500}
             className="block rounded-md  w-full"
-            src="https://images.unsplash.com/photo-1710170601257-242514895755?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/1.png"
             alt="about us image"
           />
         </div>

@@ -28,8 +28,8 @@ const PriceCard = () => {
             className="md:max-w-96 border-2 dark:border shadow-lg rounded-lg overflow-hidden bg-gray-100 dark:bg-black flex flex-col items-start gap-3 justify-start "
           >
             <Image
-              width={500}
-              height={400}
+              width={800}
+              height={500}
               src={item?.image}
               alt="Equity Tank Courses"
             />
@@ -50,7 +50,7 @@ const PriceCard = () => {
                 <FaStar />
               </div>
               <span className="text-xs md:text-sm text-gray-600 dark:text-gray-300 font-bold">
-                {item?.review} Reviews
+                {item?.rating} Ratings
               </span>
             </span>
             <div className="flex w-full items-center  justify-between p-3">
@@ -64,7 +64,7 @@ const PriceCard = () => {
                 </span>
               </span>
 
-              <span className="inline-block bg-red-500 text-white text-xs px-2 py-2 rounded-full uppercase font-semibold tracking-wider">
+              <span className="inline-block bg-red-500 text-white text-sm px-3 py-2 rounded-full uppercase font-semibold tracking-wider">
                 {item.percentage}% Off
               </span>
             </div>
@@ -81,43 +81,37 @@ export const Card = [
   {
     id: 1,
     title: "Stock Foundation Programme ",
-    image:
-      "https://images.unsplash.com/photo-1707327956851-30a531b70cda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/3.png",
     text: "This Course is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. This course will make your foundation strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks.",
     price: 1999,
     discount: 3999,
     paymentType: "monthly",
     link: "/foundation",
     rating: 93,
-    percentage: 25,
-    review: 100,
+    percentage: 50,
   },
   {
     id: 2,
     title: "Smart Trader Course – Advance ",
-    image:
-      "https://images.unsplash.com/photo-1682686581498-5e85c7228119?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/4.png",
     text: "This Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept. This course will make your psychology strong and make you more accurate in your trading. At the end of your course, you’ll start doing trade like banks & Institutions.",
     price: 2499,
     discount: 5999,
     paymentType: "monthly",
     link: "/smart-traders",
     rating: 305,
-    percentage: 40,
-    review: 100,
+    percentage: 60,
   },
   {
     id: 3,
     title: "ET – Futures & Options",
-    image:
-      "https://images.unsplash.com/photo-1613117908785-381bafe45361?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/5.png",
     text: "This Course is designed for Traders who want to learn about Futures & Options in depth and also want to trade in specially options. This course is designed for those who want to trade options professionally, in this course you will get to know how options premium calculated with the help of Greeks. Whether the options premium is cheap or expensive, when to be an option buyer and when to be a seller.",
     price: 2999,
     discount: 6999,
     paymentType: "monthly",
     link: "/futures-options",
     rating: 113,
-    percentage: 30,
-    review: 100,
+    percentage: 60,
   },
 ];

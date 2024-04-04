@@ -16,7 +16,8 @@ const Resources = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <a
             class="p-5 max-w-md border border-indigo-300 rounded-2xl hover:shadow-xl  flex flex-col items-center"
-            href="#"
+            href="https://neo.kotaksecurities.com/"
+            target="_blank"
           >
             <Image
               width={300}
@@ -42,7 +43,8 @@ const Resources = () => {
           </a>
           <a
             class="p-5 max-w-md border border-indigo-300 rounded-2xl hover:shadow-xl  flex flex-col items-center"
-            href="#"
+            href="https://signup.fyers.in/?utm-source=AP-Leads&utm-medium=AP2684"
+            target="_blank"
           >
             <Image
               width={300}

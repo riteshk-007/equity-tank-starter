@@ -28,8 +28,7 @@ const OnliceCourse = () => {
           </span>
         </div>
         <Course
-          img={"/banner/1.png"}
-          title={"Smart Traders Course "}
+          img={"/4.png"}
           description1={
             "This Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept."
           }
@@ -49,8 +48,7 @@ const OnliceCourse = () => {
           </span>
         </div>
         <Course
-          img={"/banner/1.png"}
-          title={"ET – Futures & Options"}
+          img={"/5.png"}
           description1={
             "This Course is designed for Traders who want to learn about Futures & Options in depth and also want to trade in specially options."
           }

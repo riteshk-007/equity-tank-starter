@@ -28,10 +28,7 @@ const FuturesOptions = () => {
         </span>
       </div>
       <Course
-        img={
-          "https://images.unsplash.com/photo-1465218550585-6d069382d2a9?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-        title={"ET – Futures & Options"}
+        img={"/5.png"}
         description1={
           "This Course is designed for Traders who want to learn about Futures & Options in depth and also want to trade in specially options."
         }

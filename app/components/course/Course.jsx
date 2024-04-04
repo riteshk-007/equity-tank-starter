@@ -4,7 +4,6 @@ import { FaCalendarDays } from "react-icons/fa6";
 import { FaRupeeSign } from "react-icons/fa";
 import Image from "next/image";
 const Course = ({
-  title,
   description1,
   description2,
   price,
@@ -18,9 +17,9 @@ const Course = ({
         <Image
           src={img}
           width={1920}
-          height={500}
+          height={1080}
           alt="Resources"
-          className="p-2 w-full rounded-lg"
+          className=" w-full rounded-2xl shadow-md border-2 dark:border-gray-900"
         />
       </div>
       <div className="w-full p-4 lg:w-[40%] flex items-center justify-center flex-col shadow-md mt-5 rounded-lg border-2 dark:bg-gray-950  m-1">

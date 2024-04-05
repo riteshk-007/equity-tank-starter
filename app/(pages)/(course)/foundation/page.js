@@ -57,7 +57,13 @@ const list = [
     ],
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold">Equity Tank</h2>
+        <Image
+          src="/chart/1.jpeg"
+          width={800}
+          height={500}
+          className="h-full w-full object-cover border-[#00c2cb] border-2 rounded-lg shadow-lg"
+          alt="chart"
+        />
       </div>
     ),
   },
@@ -71,7 +77,13 @@ const list = [
     ],
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        <h2 className="text-2xl font-bold">Equity Tank</h2>
+        <Image
+          src="/chart/2.jpeg"
+          width={800}
+          height={500}
+          className="h-full w-full object-cover border-[#00c2cb] border-2 rounded-lg shadow-lg"
+          alt="chart"
+        />
       </div>
     ),
   },
@@ -86,7 +98,13 @@ const list = [
     ],
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <h2 className="text-2xl font-bold">Equity Tank</h2>
+        <Image
+          src="/chart/3.jpeg"
+          width={800}
+          height={500}
+          className="h-full w-full object-cover border-[#00c2cb] border-2 rounded-lg shadow-lg"
+          alt="chart"
+        />
       </div>
     ),
   },
@@ -101,7 +119,13 @@ const list = [
     ],
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <h2 className="text-2xl font-bold">Equity Tank</h2>
+        <Image
+          src="/chart/4.jpeg"
+          width={800}
+          height={500}
+          className="h-full w-full object-cover border-[#00c2cb] border-2 rounded-lg shadow-lg"
+          alt="chart"
+        />
       </div>
     ),
   },

@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import StarRatings from "react-star-ratings";
@@ -78,14 +79,15 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
-          <li
+        {items.map((item) => (
+          <Link
+            href="/testimonials"
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
-            key={item.name}
+            key={item.id}
           >
             <blockquote>
               <div
@@ -99,7 +101,7 @@ export const InfiniteMovingCards = ({
                 <Image
                   width={40}
                   height={40}
-                  src="/light-logo.png"
+                  src={item?.img}
                   alt={item.name}
                   className="w-10 h-10 object-cover rounded-full mr-4"
                 />
@@ -118,7 +120,7 @@ export const InfiniteMovingCards = ({
                 </span>
               </div>
             </blockquote>
-          </li>
+          </Link>
         ))}
       </ul>
     </div>

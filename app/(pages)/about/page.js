@@ -6,7 +6,19 @@ import {
   FaLinkedin,
 } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import CarouselScroll from "@/app/components/Carousel";
 
+const images = [
+  {
+    img: "/7.png",
+  },
+  {
+    img: "/8.png",
+  },
+  {
+    img: "/9.png",
+  },
+];
 const About = () => {
   return (
     <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
@@ -32,13 +44,7 @@ const About = () => {
       </div>
 
       <div className="lg:mt-14 sm:mt-10 mt-12">
-        <Image
-          width={1920}
-          height={1080}
-          className=" w-full rounded-lg"
-          src="/7.png"
-          alt="about us image"
-        />
+        <CarouselScroll images={images} timing={2500} />
       </div>
 
       <div className="lg:mt-16 sm:mt-12 mt-16 flex lg:flex-row justify-between flex-col lg:gap-8 gap-12">

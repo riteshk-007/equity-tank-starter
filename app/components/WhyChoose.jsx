@@ -85,7 +85,11 @@ const WhyChoose = () => {
           </div>
           <div className="mx-auto container  md:-mt-28 -mt-20 flex justify-center items-center">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-x-2 gap-y-2 lg:gap-x-6 md:gap-x-6 md:gap-y-6 ">
-              <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
+              <a
+                href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LM5KKzBJzy42YLRSNagwtjRIMTBNSbVIMbJMTkyytDKoMEoxN09KMkk0NDcxSjM0TfbiTi0szSypVChJzMsGAJh7FDc&q=equity+tank&rlz=1C1RXQR_enIN1100IN1100&oq=eq&gs_lcrp=EgZjaHJvbWUqFQgCEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MgYIARBFGDkyFQgCEC4YJxivARjHARiABBiKBRiOBTIGCAMQRRg7Mg0IBBAAGIMBGLEDGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMzQxMWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x390d05de8d29cab9:0x2d77bb4a1742f15c,1,,,,"
+                target="_blank"
+                className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl"
+              >
                 <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <FcGoogle fontSize={40} /> Reviews
                 </p>
@@ -99,7 +103,7 @@ const WhyChoose = () => {
                   <IoIosStar />
                   <LiaStarHalf />
                 </p>
-              </div>
+              </a>
               <div className="flex justify-center flex-col items-center w-32 h-32 m-2 md:w-44 md:h-44 lg:w-56 lg:h-40 dark:bg-gray-200  bg-gray-900 shadow rounded-2xl">
                 <p className="mt-1 md:mt-4 text-sm md:text-base lg:text-lg leading-none text-center dark:text-gray-600 text-gray-200 flex items-center justify-center gap-2">
                   <MdGroups fontSize={40} />

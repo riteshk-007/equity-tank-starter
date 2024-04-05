@@ -1,22 +1,14 @@
-import CarouselScroll from "@/app/components/Carousel";
 import Certificate from "@/app/components/Certificate";
 import CourseCurriculum from "@/app/components/CourseCurriculum";
 import Pagination from "@/app/components/Pagination";
 import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
+import Image from "next/image";
 
-const images = [
-  {
-    img: "/banner/1.png",
-  },
-  {
-    img: "/banner/2.png",
-  },
-];
 const SmartTraders = () => {
   return (
     <div className="flex flex-col w-full">
-      <CarouselScroll images={images} timing={2000} />
+      <Image src="/6.png" width={1920} height={1080} alt="smart-trades" />
       <Pagination
         num={2}
         rightLink={"/futures-options"}
@@ -41,7 +33,7 @@ const SmartTraders = () => {
       />
       <CourseCurriculum list={list} />
       <Providing />
-      <Certificate />
+      <Certificate img={"/certificate/smart trader.png"} />
     </div>
   );
 };

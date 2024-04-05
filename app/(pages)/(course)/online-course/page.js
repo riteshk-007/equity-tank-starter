@@ -5,13 +5,10 @@ import React from "react";
 
 const images = [
   {
-    img: "/banner/1.png",
+    img: "/6.png",
   },
   {
     img: "/banner/2.png",
-  },
-  {
-    img: "/banner/4.png",
   },
 ];
 const OnliceCourse = () => {

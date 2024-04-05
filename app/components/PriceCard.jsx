@@ -54,7 +54,7 @@ const PriceCard = () => {
               </span>
             </span>
             <div className="flex w-full items-center  justify-between p-3">
-              <span className="text-xs flex-col flex md:text-2xl font-semibold text-black  dark:text-white text-start">
+              <span className="text-xl flex-col flex md:text-2xl font-semibold text-black  dark:text-white text-start">
                 <span className="flex items-center justify-center">
                   {"₹"}
                   {item?.price} <p className="text-xs">/-{item?.paymentType}</p>

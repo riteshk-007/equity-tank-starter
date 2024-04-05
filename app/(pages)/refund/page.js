@@ -1,5 +1,9 @@
 import React from "react";
 
+export const metadata = {
+  title: "Equity Tank - Refund Policy",
+  description: "Refund Policy for Equity Tank Courses",
+};
 const Refund = () => {
   return (
     <div className="flex flex-col p-5 space-y-8">
@@ -29,9 +33,9 @@ const Refund = () => {
         Understanding Our Refund Policy:
       </h2>
       <p className="text-gray-800 dark:text-gray-200 text-base leading-6">
-        When you enroll in any of our three exceptional courses, please note
-        that all purchases are considered final. This means that refunds will
-        not be granted once you have gained access to the course materials and
+        When you enroll in any of our exceptional courses, please note that all
+        purchases are considered final. This means that refunds will not be
+        granted once you have gained access to the course materials and
         resources. We want to be transparent about this policy to ensure that
         you make an informed decision before enrolling.
       </p>

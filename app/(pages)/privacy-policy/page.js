@@ -1,5 +1,9 @@
 import React from "react";
 
+export const metadata = {
+  title: "Equity Tank - Privacy Policy",
+  description: "Equity Tank - Privacy Policy",
+};
 const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col p-5 space-y-8">

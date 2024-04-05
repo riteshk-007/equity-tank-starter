@@ -14,10 +14,10 @@ const FaqQuesAns = ({ numQuestions }) => {
       <Accordion type="single" collapsible className="w-full">
         {questions?.slice(0, numQuestions).map((question, index) => (
           <AccordionItem value={`item-${index + 1}`} key={`item-${index + 1}`}>
-            <AccordionTrigger className="text-start">
+            <AccordionTrigger className="text-start font-semibold text-base cursor-pointer">
               {question.trigger}
             </AccordionTrigger>
-            <AccordionContent className="text-start">
+            <AccordionContent className="text-start text-gray-900 dark:text-gray-300">
               {question.content}
             </AccordionContent>
           </AccordionItem>

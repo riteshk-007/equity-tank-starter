@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Equity Tank - ET Foundation",
+  description:
+    "ET Foundation is a non-profit organization that works to provide financial literacy and education to the underprivileged and marginalized communities.",
+};
 const ETFoundation = () => {
   return (
     <div>

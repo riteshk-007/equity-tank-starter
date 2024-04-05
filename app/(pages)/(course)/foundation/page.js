@@ -5,6 +5,11 @@ import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Equity Tank - Stock Foundation Programme",
+  description:
+    "Stock Foundation Programme  is specially designed for beginners who want to learn from the scratch & to build a strong Fundamental & core knowledge of Technical Analysis. This course will make your foundation strong about stock market. At the end of course, you will be able to pick a fundamentally strong share for invest and you will also start trading in stocks.",
+};
 const Foundation = () => {
   return (
     <div className="flex flex-col w-full">

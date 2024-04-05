@@ -8,6 +8,12 @@ import {
 import { FaYoutube } from "react-icons/fa";
 import CarouselScroll from "@/app/components/Carousel";
 
+export const metadata = {
+  title: "Equity Tank - About Us",
+  description:
+    "Welcome, to the Leading Best Stock Market Institute In Delhi Since 2021. Equity Tank is on a mission of making Equity Tank Stock Market Institute In Delhi Since 2021.",
+};
+
 const images = [
   {
     img: "/7.png",

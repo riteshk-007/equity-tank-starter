@@ -5,6 +5,11 @@ import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Equity Tank - Smart Traders Course",
+  description:
+    "Smart Traders Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept. This course will make your psychology strong and make you more accurate in your trading. At the end of your course, you’ll start doing trade like banks & Institutions.",
+};
 const SmartTraders = () => {
   return (
     <div className="flex flex-col w-full">

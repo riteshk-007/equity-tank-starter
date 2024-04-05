@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Equity Tank - Terms and Conditions",
+  description:
+    "Equity Tank provides the best share market classes in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi.",
+};
 const TermsConditions = () => {
   return (
     <div className="flex flex-col p-5 space-y-8">

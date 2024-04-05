@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Equity Tank - Resources",
+  description:
+    "Resources is a page where you can find all the resources related to Equity Tank.",
+};
 const Resources = () => {
   function truncateText(text, limit) {
     const words = text.split(" ");

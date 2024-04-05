@@ -7,8 +7,11 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Equity Tank",
-  description: "A platform for equity research and analysis",
+  title: {
+    default: "Equity Tank - Share Market Classes in Delhi",
+  },
+  description:
+    "share market classes in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi. Learn share market from the best share market institute in Delhi. Equity Tank is the best share market institute in Delhi.",
 };
 
 export default function RootLayout({ children }) {

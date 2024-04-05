@@ -14,6 +14,11 @@ const images = [
     img: "/banner/2.png",
   },
 ];
+export const metadata = {
+  title: "Equity Tank - Online Course",
+  description:
+    "Online Course is specially designed to Learn Institutional Based Trading and Real Price Action Data Analysis. You’ll Learn to Trade on Smart Money Concept. This course will make your psychology strong and make you more accurate in your trading. At the end of your course, you’ll start doing trade like banks & Institutions.",
+};
 const OnliceCourse = () => {
   return (
     <div className="flex flex-col">

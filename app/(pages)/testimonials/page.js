@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import { review } from "@/data/review";
+
+export const metadata = {
+  title: "Equity Tank - Testimonials",
+  description:
+    "Discover why our Students love us. Read firsthand accounts of the exceptional service and results we deliver.",
+};
 const Testimonials = () => {
   return (
     <section className="py-14">

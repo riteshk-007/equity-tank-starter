@@ -5,6 +5,11 @@ import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Equity Tank - ET – Futures & Options",
+  description:
+    "This Course is designed for Traders who want to learn about Futures & Options in depth and also want to trade in specially options. This course is designed for those who want to trade options professionally, in this course you will get to know how options premium calculated with the help of Greeks. Whether the options premium is cheap or expensive, when to be an option buyer and when to be a seller.",
+};
 const FuturesOptions = () => {
   return (
     <div className="flex flex-col w-full">

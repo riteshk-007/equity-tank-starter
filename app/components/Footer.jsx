@@ -68,6 +68,11 @@ const Footer = () => {
                     Privacy Policy
                   </Link>
                 </li>
+                <li className="my-2">
+                  <Link href="/refund" className="hover:underline">
+                    Refund Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -75,7 +80,7 @@ const Footer = () => {
                 Explore
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium text-sm">
-                <li className="mb-4">
+                <li className="mb-2">
                   <Link href="/resources" className="hover:underline">
                     Resources
                   </Link>

@@ -1,7 +1,7 @@
-// BrokenCard.js
-
 import Image from "next/image";
-import React from "react";
+import { GiBrain } from "react-icons/gi";
+import { ImBooks } from "react-icons/im";
+import { FaHandshake } from "react-icons/fa";
 
 const BrokenCard = () => {
   return (
@@ -23,13 +23,7 @@ const BrokenCard = () => {
               <div className="flex flex-col md:flex-row md:items-start gap-2">
                 <div className="flex flex-col items-center justify-center mr-5">
                   <div className="flex items-center justify-center h-20 w-20 rounded-full bg-[#00c2cb] text-white border-4 border-gray-200 text-4xl font-semibold">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="https://images.unsplash.com/photo-1711075781376-bc5107736730?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Step 3"
-                      className="h-full w-full object-cover rounded-full"
-                    />
+                    <GiBrain />
                   </div>
                   <span className="text-gray-500 dark:text-gray-200">STEP</span>
                 </div>
@@ -47,13 +41,7 @@ const BrokenCard = () => {
               <div className="flex flex-col md:flex-row md:items-start gap-2">
                 <div className="flex flex-col items-center justify-center mr-5">
                   <div className="flex items-center justify-center h-20 w-20 rounded-full bg-[#00c2cb] text-white border-4 border-gray-200 text-4xl font-semibold">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="https://images.unsplash.com/photo-1711075781376-bc5107736730?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Step 3"
-                      className="h-full w-full object-cover rounded-full"
-                    />
+                    <ImBooks />
                   </div>
                   <span className="text-gray-500 dark:text-gray-200">STEP</span>
                 </div>
@@ -71,13 +59,7 @@ const BrokenCard = () => {
               <div className="flex flex-col md:flex-row md:items-start gap-2">
                 <div className="flex flex-col items-center justify-center mr-5">
                   <div className="flex items-center justify-center h-20 w-20 rounded-full bg-[#00c2cb] text-white border-4 border-gray-200 text-4xl font-semibold">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="https://images.unsplash.com/photo-1711075781376-bc5107736730?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Step 3"
-                      className="h-full w-full object-cover rounded-full"
-                    />
+                    <FaHandshake />
                   </div>
                   <span className="text-gray-500 dark:text-gray-200">STEP</span>
                 </div>

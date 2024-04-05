@@ -1,5 +1,7 @@
 import CarouselScroll from "@/app/components/Carousel";
+import Certificate from "@/app/components/Certificate";
 import CourseCurriculum from "@/app/components/CourseCurriculum";
+import Providing from "@/app/components/Providing";
 import Course from "@/app/components/course/Course";
 import Image from "next/image";
 import React from "react";
@@ -58,6 +60,8 @@ const OnliceCourse = () => {
           message={"I am Interested in ET – Futures & Options"}
         />
         <CourseCurriculum list={list2} />
+        <Providing />
+        <Certificate img={"/certificate/futures-options.png"} />
       </div>
     </div>
   );

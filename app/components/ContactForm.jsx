@@ -1,6 +1,32 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xjvnaneg");
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowSuccess(true);
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 5000);
+    }
+  }, [state.succeeded]);
+
+  if (showSuccess) {
+    return (
+      <div className="w-full mx-auto flex items-center justify-center p-2">
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+          <strong className="font-bold">Success!</strong>
+          <span className="block sm:inline">
+            Your message has been sent successfully.
+          </span>
+        </div>
+      </div>
+    );
+  }
   return (
     <section className="relative z-10 overflow-hidden bg-white dark:bg-black/30 py-20 lg:py-[120px]">
       <div className="container mx-auto">
@@ -109,31 +135,49 @@ const ContactForm = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="relative p-8 bg-white dark:bg-black rounded-lg shadow-lg border-2  sm:p-12">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-6">
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    name="name"
+                    placeholder="Name"
                     className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
                     required
+                  />
+                  <ValidationError
+                    prefix="name"
+                    field="name"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="mb-6">
                   <input
                     type="email"
-                    placeholder="Your Email"
+                    name="email"
+                    placeholder="Email"
                     className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
                     required
+                  />
+                  <ValidationError
+                    prefix="email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
 
                 <div className="mb-6">
                   <textarea
                     rows="6"
-                    placeholder="Your Message"
+                    name="message"
+                    placeholder="Message"
                     className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                     required
                   ></textarea>
+                  <ValidationError
+                    prefix="message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <div>
                   <button

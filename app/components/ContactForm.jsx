@@ -164,6 +164,22 @@ const ContactForm = () => {
                     errors={state.errors}
                   />
                 </div>
+                <div className="mb-6">
+                  <input
+                    type="number"
+                    name="number"
+                    placeholder="number"
+                    className="border-stroke  dark:text-gray-200 dark:bg-gray-950 text-body-color focus:border-sky-500 w-full rounded border py-3 px-[14px] text-base outline-none"
+                    max={10}
+                    min={10}
+                    required
+                  />
+                  <ValidationError
+                    prefix="number"
+                    field="number"
+                    errors={state.errors}
+                  />
+                </div>
 
                 <div className="mb-6">
                   <textarea
